@@ -1,4 +1,4 @@
-import Router from "https://deno.land/x/rp1/mod.ts";
+import Router from "jsr:@korkje/rp1@0.6.5";
 
 const router = new Router();
 
