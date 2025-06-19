@@ -2,18 +2,8 @@
 # Please do not edit manually, instead run deno task workflow
 
 name: bench
-'on':
-  schedule:
-    - cron: 0 0 * * *
-  push:
-    paths:
-      - '**.ts'
-      - '**.js'
-      - '**.tsx'
-      - '**.jsx'
-      - '**.yml'
-      - '**.json'
-      - '!frameworks/*/results/*.json'
+on:
+  workflow_dispatch:
 jobs:
   hello_bench:
     name: 'Hello, bench!'
